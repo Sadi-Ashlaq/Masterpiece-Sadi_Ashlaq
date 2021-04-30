@@ -13,40 +13,37 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 // End User profile Routes----------------------------------------------------------------------------------------------
-Route::get('/user_profile', 'UserProfileController@index') ->name('user_profile');
-Route::post('/user_profile', 'UserProfileController@store')->name('store_user');
-Route::post('user/edit/profile', 'UserProfileController@update')->name('user_edit_profile');
-Route::get('user/edit/profile', 'UserProfileController@update')->name('user_edit_profile');
-Route::get('change-password', 'UserProfileController@update');
-Route::post('change-password', 'UserProfileController@update')->name('change.password');
+        Route::get('/user_profile', 'UserProfileController@index') ->name('user_profile');
+        Route::post('/user_profile', 'UserProfileController@store')->name('store_user');
+        Route::post('user/edit/profile', 'UserProfileController@update')->name('user_edit_profile');
+        Route::get('user/edit/profile', 'UserProfileController@update')->name('user_edit_profile');
+        Route::get('change-password', 'UserProfileController@update');
+        Route::post('change-password', 'UserProfileController@update')->name('change.password');
 // End User profile Routes----------------------------------------------------------------------------------------------
 // Home Routes----------------------------------------------------------------------------------------------------------
-Route::get('/', 'HomeController@index')->name('home');
-Route::post('/contact', 'ContactController@store')->name('contact');
+        Route::get('/', 'HomeController@index')->name('home');
+        Route::post('/contact', 'ContactController@store')->name('contact');
 
 // User Login Routes----------------------------------------------------------------------------------------------------
-Route::get('/user/login', function () {
+        Route::get('/user/login', function () {
     return view('public.login');
 })->name('public.login');
 // End User Login Routes------------------------------------------------------------------------------------------------
 // User Order Routes----------------------------------------------------------------------------------------------------
-//Route::get('/user/order', function () {
-//    return view('public.order');
-//})->name('order');
-Route::get('/user/order', 'OrderController@index') ->name('order');
-Route::post('/user/orderfomr', 'OrderController@store') ->name('orderfomr');
+        Route::get('/user/order', 'OrderController@index') ->name('order');
+        Route::post('/user/orderfomr', 'OrderController@store') ->name('orderfomr');
 
 // End User Order Routes------------------------------------------------------------------------------------------------
 // Manage Edit User Routes----------------------------------------------------------------------------------------------
-Route::post('/edit/{id}', 'UserController@update')->name('edit_user');
+        Route::post('/edit/{id}', 'UserController@update')->name('edit_user');
 // End Manage Edit User Routes------------------------------------------------------------------------------------------
 // Admin Login Routes
-     Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-     Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-     Route::post('/admin/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
-     Route::prefix('admin')->middleware('auth:admin')->group(function (){
+        Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+        Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+        Route::post('/admin/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+        Route::prefix('admin')->middleware('auth:admin')->group(function (){
 // Middleware-----------------------------------------------------------------------------------------------------------
-    Route::middleware('auth:admin')->group(function (){
+        Route::middleware('auth:admin')->group(function (){
 
 //        Route::get('/', function () {
 //            return view('dashboard.index');

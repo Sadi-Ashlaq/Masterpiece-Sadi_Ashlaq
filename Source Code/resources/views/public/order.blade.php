@@ -2,7 +2,7 @@
 <html>
 <head>
 {{-- Google map API    AIzaSyDTYZhDthRP9gzMg0NBZ-4LpfU44iTIekg--}}
-{{--    10024--}}
+{{--    10024  --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{asset('css1/order.css')}}">
@@ -216,11 +216,11 @@
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">
-                            <input name="Damage[Camera_Doesnt_Work]" type="checkbox"> Camera Doesnt Work
+                            <input name="Damage[Camera_Doesnt_Work]" type="checkbox"> Camera Issues
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">
-                            <input name="Damage[Speaker_Doesnt_Work]" type="checkbox"> Speaker Doesnt Work
+                            <input name="Damage[Speaker_Doesnt_Work]" type="checkbox"> Speaker Issues
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -235,8 +235,8 @@
                             <input style="width: 250px; background-color:#D64B50; color: white; " value="Press to get location" type="button" onclick="getLocation()"></input>
                             <p id="demo"></p>
                             </div>
-            </form>
-            <br>
+                        </form>
+                        <br>
                         <div class="col-50">
                             <h3>Repair Details</h3>
                             <br>
@@ -251,9 +251,9 @@
                     </div>
                 </div>
                 <input type="submit" value="Order" class="btn">
-        </div>
-    </div>
-</div>
+               </div>
+               </div>
+             </div>
 <script>
     var x = document.getElementById("demo");
     function getLocation() {

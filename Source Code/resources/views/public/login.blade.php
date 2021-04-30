@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="{{asset('css1/custom1.css')}}">
 </head>
 <body>
+
 <div class="container" id="container">
     <div class="form-container sign-up-container">
         <form method="POST" action="{{ route('register') }}">
             @csrf
             <h1>Create Account</h1>
-            <div class="social-container">
-
-            </div>
-
+            <div class="social-container">            </div>
             <input id="name"  name="name" value="{{ old('name') }}"  type="text" placeholder="Name" />
             <div class="alert-danger">{{$errors->first('name')}}</div>
             <input id="email" name="email" value="{{ old('email') }}" type="email" placeholder="Email" />
@@ -36,9 +34,7 @@
             @csrf
             <h1>Sign in</h1>
             <div class="social-container">
-
             </div>
-
             <input id="email" name="email" type="email" value="{{ old('email') }}" placeholder="Email" />
             <div class="alert-danger">{{$errors->first('email')}}</div>
 
