@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcbcefa3-d5ff-441b-8adb-73c4dc550d6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Masterpiece-v2.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Masterpiece-v2.1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source Code/public/css1/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Source Code/public/css1/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source Code/resources/views/public/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Source Code/resources/views/public/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source Code/resources/views/public/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Source Code/resources/views/public/order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source Code/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Source Code/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/diagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/assets/img/diagram.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,8 +138,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -157,6 +156,7 @@
       <updated>1619802098671</updated>
       <workItem from="1619802105240" duration="1512000" />
       <workItem from="1619809590531" duration="5115000" />
+      <workItem from="1619822132625" duration="1351000" />
     </task>
     <servers />
   </component>
