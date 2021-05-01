@@ -216,11 +216,11 @@
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">
-                            <input name="Damage[Camera_Doesnt_Work]" type="checkbox"> Camera Issues
+                            <input name="Damage[Camera_Issues]" type="checkbox"> Camera Issues
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">
-                            <input name="Damage[Speaker_Doesnt_Work]" type="checkbox"> Speaker Issues
+                            <input name="Damage[Speaker_Issues]" type="checkbox"> Speaker Issues
                             <span class="checkmark"></span>
                         </label>
                     </div>
